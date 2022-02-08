@@ -1,6 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap');
+
+body {
+  margin: 0;
   height: 200vh;
-  background-color: #414d96;
+  background-color: #889aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.App {
+  font-family: 'Montagu Slab', serif;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6c82ff;
+}
+
+h3{
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+
+}
+
+label {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 0px black;
+  background-color: gold;
+}
+
+input[type='range'] {
+  margin-left: 10px;
+}
+
+select {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+}
