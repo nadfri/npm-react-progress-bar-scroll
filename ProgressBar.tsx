@@ -15,6 +15,8 @@ export function ProgressBar({
 }: Props) {
   const progressBar_ref = useRef<HTMLDivElement>(null);
 
+
+
   const handleScroll = () => {
     const page = document.documentElement; //element HTML
     let totalHeight = page.scrollHeight; //Height Total of page
@@ -30,6 +32,15 @@ export function ProgressBar({
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const positions = ['fixed', 'absolute', 'relative', "sticky"];
+
+  color1 = (typeof color1 === "string")? color1 : "gray";
+  color2 = (typeof color2 === "string")? color2 : "gold";
+  height = (typeof height === "string")? height : "4px";
+  position = (!positions.includes(position))? "fixed" : position;
+
+  console.log(color1);
 
   const styles: { [key: string]: React.CSSProperties } = {
     container: {
