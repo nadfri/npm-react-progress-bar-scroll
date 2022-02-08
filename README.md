@@ -7,6 +7,9 @@
 npm i @nadfri/react-scroll-progress-bar
 ```
 
+## Live Example
+https://npm-react-scroll-progress-bar.netlify.app/
+
 ## Usage
 ```jsx
 //Import ProgressBar component
@@ -37,3 +40,6 @@ If you use ```<ProgressBar/>``` without props
 - `position` | Position of the progress bar (ex: "absolute", "fixed", "sticky", "relative")
 
 You can use all css values for this properties.
+
+## Screen Shot
+![screanShot](https://npm-react-scroll-progress-bar.netlify.app/image.png)
