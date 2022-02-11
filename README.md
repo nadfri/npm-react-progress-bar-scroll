@@ -1,6 +1,6 @@
 # <center>Easy Progress Bar on scroll for ```react```</center>
 
-### Add an progress bar on the top of your page to indicate the position of the scroll page
+### Add a progress bar on the top of your page to indicate the position of the scroll page
 
 ## Install
 ```bash
@@ -13,21 +13,26 @@ https://npm-react-scroll-progress-bar.netlify.app/
 ## Usage
 ```jsx
 //Import ProgressBar component
-import {ProgressBar} from '@nadfri/react-scroll-progress-bar';
+import { ProgressBar } from '@nadfri/react-scroll-progress-bar';
 
 export default function App() {
   return (
     <div style={{height: "200vh"}}>
-      <ProgressBar color1="gray" color2="gold" position="fixed" height="4px"/>
-      {/*or*/}
       <ProgressBar />
+      {/*or*/}
+      <ProgressBar 
+        color1   = "gray" 
+        color2   = "gold" 
+        height   = "4px"
+        position = "fixed" 
+        />
     </div>
   );
 }
 ```
 
 # Default Props
-If you use ```<ProgressBar/>``` without props
+If you use ```<ProgressBar/>``` without props, default values are:
 - color of container will be `gray` (color1)
 - color of bar will be `gold` (color2)        
 - position of progress bar will be `fixed` (position)
@@ -40,6 +45,8 @@ If you use ```<ProgressBar/>``` without props
 - `position` | Position of the progress bar (ex: "absolute", "fixed", "sticky", "relative")
 
 You can use all css values for this properties.
+
+## Live Demo:  [Click here](https://npm-react-scroll-progress-bar.netlify.app/)
 
 ## Screen Shot
 ![screanShot](https://npm-react-scroll-progress-bar.netlify.app/image.png)
